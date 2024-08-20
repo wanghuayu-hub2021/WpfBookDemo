@@ -1,0 +1,28 @@
+﻿<Window x:Class="BindingSysDemo.BindingConverterDemo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BindingSysDemo"
+        mc:Ignorable="d"
+        Title="BindingConverterDemo" Height="500" Width="600">
+    <Window.Resources>
+        <local:Category2SourceConverter x:Key="c2s"></local:Category2SourceConverter>
+        <local:State2NullableBoolConverter x:Key="s2b"></local:State2NullableBoolConverter>
+    </Window.Resources>
+    <StackPanel Background="AliceBlue">
+        <ListBox x:Name="listBoxPlane" Height="300" Margin="5">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Width="40" Height="20" Source="{Binding Path=Category, Converter={StaticResource c2s}}"></Image>
+                        <TextBlock Text="{Binding Path=Name}" Width="60" Margin="80,0"></TextBlock>
+                        <CheckBox IsThreeState="True" IsChecked="{Binding Path=State, Converter={StaticResource s2b}}"></CheckBox>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Button x:Name="btnLoad" Content="Load" Height="25" Margin="5" Click="btnLoad_Click"></Button>
+        <Button x:Name="btnSave" Content="Save" Height="25" Margin="5" Click="btnSave_Click"></Button>
+    </StackPanel>
+</Window>

@@ -1,0 +1,40 @@
+﻿<Window x:Class="BindingSysDemo.HierarchicalDataTplDemo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BindingSysDemo"
+        mc:Ignorable="d"
+        Title="HierarchicalDataTplDemo" Height="400" Width="400">
+    <Window.Resources>
+        <XmlDataProvider x:Key="xdp" XPath="FileSystem/Forder">
+            <x:XData>
+                <FileSystem xmlns="">
+                    <Forder Name="Books">
+                        <Forder Name="Programming">
+                            <Forder Name="Windows">
+                                <Forder Name="WPF"></Forder>
+                                <Forder Name="MFC"></Forder>
+                                <Forder Name="Dephi"></Forder>
+                            </Forder>
+                        </Forder>
+                        <Forder Name="Tools">
+                            <Forder Name="Developmentg"></Forder>
+                            <Forder Name="Designment"></Forder>
+                            <Forder Name="Players"></Forder>
+                        </Forder>
+                    </Forder>
+                </FileSystem>
+            </x:XData>
+        </XmlDataProvider>
+    </Window.Resources>
+    <Grid>
+        <TreeView ItemsSource="{Binding Source={StaticResource xdp}}">
+            <TreeView.ItemTemplate>
+                <HierarchicalDataTemplate ItemsSource="{Binding XPath=Forder}">
+                    <TextBlock Text="{Binding XPath=@Name}"></TextBlock>
+                </HierarchicalDataTemplate>
+            </TreeView.ItemTemplate>
+        </TreeView>
+    </Grid>
+</Window>

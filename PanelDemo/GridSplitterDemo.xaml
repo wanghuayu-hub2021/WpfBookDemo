@@ -1,0 +1,25 @@
+﻿<Window x:Class="PanelDemo.GridSplitterDemo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PanelDemo"
+        mc:Ignorable="d"
+        Title="GridSplitterDemo" Height="300" Width="400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"></ColumnDefinition>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBox Grid.ColumnSpan="3" BorderBrush="Black"></TextBox>
+        <TextBox Grid.Row="1" BorderBrush="Black"></TextBox>
+        <GridSplitter Grid.Row="1" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Center"
+                      Width="5" Background="Gray" ShowsPreview="True"></GridSplitter>
+        <TextBox Grid.Row="1" Grid.Column="2" BorderBrush="Black"></TextBox>
+    </Grid>
+</Window>

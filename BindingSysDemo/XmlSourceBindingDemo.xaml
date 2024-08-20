@@ -1,0 +1,21 @@
+﻿<Window x:Class="BindingSysDemo.XmlSourceBindingDemo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BindingSysDemo"
+        mc:Ignorable="d"
+        Title="XmlSourceBindingDemo" Height="400" Width="400">
+    <StackPanel>
+        <ListView x:Name="listView1" Height="300" Margin="5">
+            <ListView.View>
+                <GridView>
+                    <!--@Id表示xml元素的attribute Id Name则代表子级元素 -->
+                    <GridViewColumn Header="Id" Width="120" DisplayMemberBinding="{Binding XPath=@Id}"></GridViewColumn>
+                    <GridViewColumn Header="Name" Width="120" DisplayMemberBinding="{Binding XPath=Name}"></GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button x:Name="btn1" Content="添加数据" Width="120" Click="btn1_Click"></Button>
+    </StackPanel>
+</Window>

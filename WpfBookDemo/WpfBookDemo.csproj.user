@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="MyWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="TypeConvertDemo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="xCodeDemo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="xDataDemo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="xNullDemo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="xTypeDemo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="AttributeDemo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MyWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TypeConvertDemo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="xCodeDemo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="xDataDemo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="xNullDemo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="xTypeDemo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

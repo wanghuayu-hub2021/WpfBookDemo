@@ -1,0 +1,21 @@
+﻿<Window x:Class="BindingSysDemo.DataContextDemo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BindingSysDemo"
+        mc:Ignorable="d"
+        Title="DataContextDemo" Height="300" Width="400">
+    <StackPanel Background="LightBlue">
+        <StackPanel.DataContext>
+            <local:Employee Id="1" Age="20" Name="Jack"></local:Employee>
+        </StackPanel.DataContext>
+        <Grid>
+        <StackPanel>
+            <TextBox Text="{Binding Path=Id}" Margin="5"></TextBox>
+            <TextBox Text="{Binding Path=Name}" Margin="5"></TextBox>
+            <TextBox Text="{Binding Path=Age}" Margin="5"></TextBox>
+        </StackPanel>
+    </Grid>
+    </StackPanel>
+</Window>
