@@ -1,0 +1,22 @@
+﻿<Window x:Class="TemplateDemo.GetControlTemplateDemo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TemplateDemo"
+        mc:Ignorable="d"
+        Title="GetControlTemplateDemo" Height="300" Width="400">
+    <Window.Resources>
+        <ControlTemplate x:Key="cTmp">
+            <StackPanel Background="Orange">
+                <TextBox x:Name="tb1" Margin="5" Width="120"></TextBox>
+                <TextBox x:Name="tb2" Margin="5" Width="120"></TextBox>
+                <TextBox x:Name="tb3" Margin="5" Width="120"></TextBox>
+            </StackPanel>
+        </ControlTemplate>
+    </Window.Resources>
+    <StackPanel Background="Yellow">
+        <UserControl x:Name="myUc" Template="{StaticResource cTmp}" Margin="5"></UserControl>
+        <Button  x:Name="btn1" Content="点击一下" Margin="5" Click="btn1_Click"></Button>
+    </StackPanel>
+</Window>

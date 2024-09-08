@@ -1,0 +1,19 @@
+﻿<Window x:Class="CommandDemo.UserDefinedCommandDemo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CommandDemo"
+        mc:Ignorable="d"
+        Title="UserDefinedCommandDemo" Height="300" Width="400">
+    
+        <StackPanel>
+        <local:MyCommandSource x:Name="myCtrl">
+            <TextBlock Text="自定义命令" Background="AliceBlue" Width="120" TextAlignment="Center"></TextBlock>
+        </local:MyCommandSource>
+        <local:Miniview x:Name="mv1">
+            
+        </local:Miniview>
+        </StackPanel>
+   
+</Window>

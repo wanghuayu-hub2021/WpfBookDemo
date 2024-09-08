@@ -7,7 +7,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfBookDemo", "WpfBookDemo\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PanelDemo", "PanelDemo\PanelDemo.csproj", "{A590B5BA-8123-454B-88E9-678835670DC1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BindingSysDemo", "BindingSysDemo\BindingSysDemo.csproj", "{9C021534-FB55-465B-B068-8EC5020189F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BindingSysDemo", "BindingSysDemo\BindingSysDemo.csproj", "{9C021534-FB55-465B-B068-8EC5020189F4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RouteEventDemo", "PropertyDemo\RouteEventDemo.csproj", "{210CBEE6-7F97-4F8E-9B1B-36D476578AF9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommandDemo", "CommandDemo\CommandDemo.csproj", "{0D9DFAFA-7617-4222-8D90-7B6BEE4B88AD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ResourceDemo", "ResourceDemo\ResourceDemo.csproj", "{290F8108-A0B9-4651-8746-2887DF8A8D22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TemplateDemo", "TemplateDemo\TemplateDemo.csproj", "{EA3ED0F8-112A-48D3-8BD4-4620DDCAE74F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +35,22 @@ Global
 		{9C021534-FB55-465B-B068-8EC5020189F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C021534-FB55-465B-B068-8EC5020189F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C021534-FB55-465B-B068-8EC5020189F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{210CBEE6-7F97-4F8E-9B1B-36D476578AF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{210CBEE6-7F97-4F8E-9B1B-36D476578AF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{210CBEE6-7F97-4F8E-9B1B-36D476578AF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{210CBEE6-7F97-4F8E-9B1B-36D476578AF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D9DFAFA-7617-4222-8D90-7B6BEE4B88AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D9DFAFA-7617-4222-8D90-7B6BEE4B88AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D9DFAFA-7617-4222-8D90-7B6BEE4B88AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D9DFAFA-7617-4222-8D90-7B6BEE4B88AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{290F8108-A0B9-4651-8746-2887DF8A8D22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{290F8108-A0B9-4651-8746-2887DF8A8D22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{290F8108-A0B9-4651-8746-2887DF8A8D22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{290F8108-A0B9-4651-8746-2887DF8A8D22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA3ED0F8-112A-48D3-8BD4-4620DDCAE74F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA3ED0F8-112A-48D3-8BD4-4620DDCAE74F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA3ED0F8-112A-48D3-8BD4-4620DDCAE74F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA3ED0F8-112A-48D3-8BD4-4620DDCAE74F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

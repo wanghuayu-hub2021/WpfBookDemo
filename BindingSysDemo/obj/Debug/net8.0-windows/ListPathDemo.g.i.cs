@@ -85,7 +85,7 @@ namespace BindingSysDemo {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/BindingSysDemo;component/listpathdemo.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/BindingSysDemo;V1.0.0.0;component/listpathdemo.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\ListPathDemo.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

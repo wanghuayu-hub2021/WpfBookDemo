@@ -64,3 +64,4 @@ D:\csharpTrain\深入浅出\WpfBookDemo\WpfBookDemo\obj\Debug\net8.0-windows\ref
 D:\csharpTrain\深入浅出\WpfBookDemo\WpfBookDemo\obj\Debug\net8.0-windows\WpfBookDemo.pdb
 D:\csharpTrain\深入浅出\WpfBookDemo\WpfBookDemo\obj\Debug\net8.0-windows\WpfBookDemo.genruntimeconfig.cache
 D:\csharpTrain\深入浅出\WpfBookDemo\WpfBookDemo\obj\Debug\net8.0-windows\ref\WpfBookDemo.dll
+D:\csharpTrain\深入浅出\WpfBookDemo\WpfBookDemo\obj\Debug\net8.0-windows\WpfBookDemo.sourcelink.json

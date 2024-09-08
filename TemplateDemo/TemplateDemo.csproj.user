@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="CarDetail.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ControlTemplate.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="DataTemplate2.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="DataTemplateDemo1.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="DataTemplateView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="DataTriggerDemo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="GetControlTemplateDemo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="GetDataTemplate.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="HierarchicalTemplateDemo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MultiDataTrrigerDemo1.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MultiTriggerDemo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="PanelTemplate.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StyleDemo1.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="TriggerDemo1.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="TriggerEventDemo1.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="XmlDataTemplate1.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="CarDetail.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ControlTemplate.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DataTemplate2.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DataTemplateDemo1.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DataTemplateView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DataTriggerDemo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="GetControlTemplateDemo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="GetDataTemplate.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="HierarchicalTemplateDemo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MultiDataTrrigerDemo1.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MultiTriggerDemo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PanelTemplate.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StyleDemo1.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TriggerDemo1.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TriggerEventDemo1.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="XmlDataTemplate1.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

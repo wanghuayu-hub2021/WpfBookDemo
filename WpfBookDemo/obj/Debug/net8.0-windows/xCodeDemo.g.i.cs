@@ -73,7 +73,7 @@ namespace WpfBookDemo {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/WpfBookDemo;component/xcodedemo.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/WpfBookDemo;V1.0.0.0;component/xcodedemo.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\xCodeDemo.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

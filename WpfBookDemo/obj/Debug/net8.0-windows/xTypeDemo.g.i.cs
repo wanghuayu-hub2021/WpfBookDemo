@@ -61,7 +61,7 @@ namespace WpfBookDemo {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/WpfBookDemo;component/xtypedemo.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/WpfBookDemo;V1.0.0.0;component/xtypedemo.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\xTypeDemo.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

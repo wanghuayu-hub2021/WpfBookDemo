@@ -1,0 +1,31 @@
+﻿<Window x:Class="TemplateDemo.HierarchicalTemplateDemo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TemplateDemo"
+        mc:Ignorable="d"
+        Title="HierarchicalTemplateDemo" Height="450" Width="800">
+    <Window.Resources>
+        <XmlDataProvider x:Key="ds" Source="Data.xml" XPath="Data/Grade"/>
+        <HierarchicalDataTemplate DataType="Grade" ItemsSource="{Binding XPath=Class}">
+            <TextBlock Text="{Binding XPath=@Name}"></TextBlock>
+        </HierarchicalDataTemplate>
+        <HierarchicalDataTemplate DataType="Class" ItemsSource="{Binding XPath=Group}">
+            <RadioButton Content="{Binding XPath=@Name}" GroupName="gn"></RadioButton>
+        </HierarchicalDataTemplate>
+        <HierarchicalDataTemplate DataType="Group" ItemsSource="{Binding XPath=Student}">
+            <CheckBox Content="{Binding XPath=@Name}"></CheckBox>
+        </HierarchicalDataTemplate>
+        <XmlDataProvider x:Key="ds2" Source="Data.xml" XPath="Data/Operation"/>
+        <HierarchicalDataTemplate DataType="Operation" ItemsSource="{Binding XPath=Operation}">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="{Binding XPath=@Name}" Margin="0,5"></TextBlock>
+                <TextBlock Text="{Binding XPath=@Gesture}" Margin="0,5"></TextBlock>
+            </StackPanel>
+        </HierarchicalDataTemplate>
+    </Window.Resources>
+    <Grid>
+        <TreeView x:Name="tv" Margin="5" ItemsSource="{Binding Source={StaticResource ds2}}"></TreeView>
+    </Grid>
+</Window>
